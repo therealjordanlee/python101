@@ -14,3 +14,7 @@ print varLs
 # Reading user input into a variable
 varInput = raw_input("Enter some text:\n")
 print "You entered: " + varInput
+
+# You can also specify strings the 'c' way
+varString = "You entered: %s" % varInput
+print varString
