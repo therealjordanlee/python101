@@ -5,5 +5,6 @@ All scripts are written for Python 2.7.5
 If you're using Python on CentOS, make sure you do the following:
 * yum install -y epel-release
 * yum install -y gcc python-devel python2-pip
+* yum install -y MySQL-python
 * pip install --upgrade pip
 * pip install requests
