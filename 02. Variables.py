@@ -2,6 +2,7 @@
 # How to use variables in Python
 
 import subprocess
+import getpass
 
 # Assigning value to variables
 varHello = "Hello"
@@ -18,3 +19,7 @@ print "You entered: " + varInput
 # You can also specify strings the 'c' way
 varString = "You entered: %s" % varInput
 print varString
+
+# Doing secure reads (doesn't echo on screen, for things like passwords)
+varPassword = getpass.getpass("What's your password?\n")
+print varPassword
