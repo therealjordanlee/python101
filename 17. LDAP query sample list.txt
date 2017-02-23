@@ -1,0 +1,10 @@
+john.smith
+jane.doe
+walter.white
+jesse.pinkman
+skyler.white
+saul.goodman
+hank.schrader
+gus.fring
+tuco.salamanca
+mike.ehrmantraut
