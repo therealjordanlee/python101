@@ -9,11 +9,22 @@
 # Documentation for the requests library: http://docs.python-requests.org/en/master/
 
 import requests
+from requests.auth import HTTPBasicAuth
+from requests.auth import HttpNtlmAuth
+
 
 varUsername = raw_input("GitHub username:\n")
 varPassword = raw_input("GitHub password:\n")
 varOrg = raw_input("GitHub Organisation Name:\n")
 varOrg = "https://api.github.com/orgs/%s/outside_collaborators?per_page=100\&page=1" % varOrg
+
+# If a site requires authentication...
+# Basic Authentication:
+# req = requests.get(varOrg,auth=HTTPBasicAuth(varUsername,varPassword),headers=varHeaders)
+#
+# NTLM Authentication:
+# req = requests.get(varOrg,HttpNtlmAuth=(varUsername,varPassword),headers=varHeaders)
+
 
 varHeaders = {'Accept':'application/vnd.github.korra-preview'}
 
@@ -24,6 +35,4 @@ print req.headers
 print req.encoding
 print req.text
 print req.json()
-
-
 
