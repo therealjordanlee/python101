@@ -14,7 +14,6 @@ varUsername = raw_input("GitHub username:\n")
 varPassword = raw_input("GitHub password:\n")
 varOrg = raw_input("GitHub Organisation Name:\n")
 varOrg = "https://api.github.com/orgs/%s/outside_collaborators?per_page=100\&page=1" % varOrg
-varAuth = auth=(varUsername,varPassword)
 
 varHeaders = {'Accept':'application/vnd.github.korra-preview'}
 
